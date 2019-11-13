@@ -1,0 +1,11 @@
+@import '../../style/variables';
+
+.dash-board{
+  &__title{
+    color: $text;
+  }
+  &__description{
+    margin-bottom: $paddingBig;
+    color: $textSecondary;
+  }
+}

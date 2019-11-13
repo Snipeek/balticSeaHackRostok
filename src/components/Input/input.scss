@@ -1,0 +1,66 @@
+@import '../../style/variables';
+
+.input{
+  &__wrapper{
+    width: 100%;
+    font-size: 1em;
+    margin: 1em 0;
+
+    &_error{
+      .input__field{
+        border: 1px solid $input-border-color-danger;
+
+
+      }
+    }
+  }
+  &__error{
+    margin-top: .5rem;
+    display: block;
+    font-size: .9em;
+    color: $input-border-color-danger;
+  }
+  &__lbl{
+    display: block;
+    font-size: 1em;
+  }
+  &__label{
+    display: block;
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  &__field{
+    outline: none;
+    transition: all .2s;
+    border: 1px solid $input-border-color;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
+    width: 100%;
+    font-size: 1em;
+    &:focus{
+      border: 1px solid $secondary;
+    }
+  }
+}
+
+
+.input{
+  &__error{
+    margin-top: .5rem;
+    display: block;
+    font-size: .9em;
+    color: $danger;
+  }
+  &__field{
+    outline: none;
+    transition: all .2s;
+    border: 1px solid $input-border-color;
+    border-radius: $input-border-radius;
+    padding: $input-padding;
+    width: 100%;
+    font-size: 1em;
+    &:focus{
+      border: 1px solid $input-border-color-focus;
+    }
+  }
+}

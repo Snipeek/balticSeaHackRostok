@@ -1,0 +1,17 @@
+@import '../../style/variables';
+
+.counter{
+  &__wrapper{
+    font-size: 1em;
+  }
+  &__label{
+    margin: 0;
+    text-transform: uppercase;
+    color: $textLight;
+    font-size: .8em;
+  }
+  &__value{
+    color: $text;
+    font-weight: bold;
+  }
+}

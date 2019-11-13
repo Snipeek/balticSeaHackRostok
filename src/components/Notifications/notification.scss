@@ -1,0 +1,35 @@
+.notification{
+  &_success {
+    background: #4AC29A !important;
+  }
+
+  &_danger {
+    background: #ea6d73 !important;
+  }
+
+  .ant-notification-notice-message {
+    font-size: 15px !important;
+    color: #fff !important;
+    width: 100%;
+    padding: 0 !important;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .ant-notification-notice-close {
+    display: none;
+  }
+}
+
+.ant-notification-notice {
+  padding: .6em !important;
+}
+
+.ant-notification-topCenter {
+  top: 24px !important;
+  margin-right: 0 !important;
+  height: max-content !important;
+  bottom: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}

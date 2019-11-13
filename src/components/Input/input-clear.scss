@@ -1,0 +1,21 @@
+@import '../../style/variables';
+
+.input-clear{
+  &__wrapper{
+
+  }
+  &__input{
+    border: none;
+    background: none;
+    font-size: 100%;
+    color: $input-color;
+    padding: 0;
+    &::placeholder{
+      color: $input-placeholder-color;
+    }
+
+    &_error{
+      color: $danger;
+    }
+  }
+}

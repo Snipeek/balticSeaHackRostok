@@ -1,0 +1,25 @@
+.comments{
+  &__wrapper{
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    flex-grow: 1;
+    padding: .5em 1.5em;
+    overflow-y: scroll;
+  }
+
+  &__empty{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__time-block{
+    opacity: .5;
+    transition: .2s opacity;
+
+    &_current{
+      opacity: 1;
+    }
+  }
+}

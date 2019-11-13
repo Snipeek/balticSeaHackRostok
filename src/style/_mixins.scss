@@ -1,0 +1,34 @@
+@import './variables';
+
+@mixin theme($theme: "dark"){
+  .theme_#{$theme} & {
+    @content;
+  }
+}
+
+@mixin h1{
+  font-size: $h1;
+  line-height: $lineHeightH1;
+  color: $text;
+  font-weight: bold;
+}
+
+@mixin h1Big{
+  font-size: $h1Desktop;
+  line-height: $lineHeightH1;
+  color: $text;
+  font-weight: bold;
+}
+
+@mixin paragraphBig{
+  font-size: $paragraphBig;
+  line-height: $lineHeightParagraphBig;
+  color: $textLight;
+}
+
+@mixin h2{
+  font-size: $h2;
+  line-height: $lineHeightH2;
+  color: $text;
+  font-weight: bold;
+}

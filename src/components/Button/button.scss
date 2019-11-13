@@ -1,0 +1,82 @@
+@import '../../style/variables';
+
+.btn{
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+
+  border-radius: $button-border-radius;
+
+  outline: none;
+  display: inline-block;
+  text-align: center;
+  padding: $button-padding;
+  line-height: 1.1;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  transition: all .3s;
+
+  &:hover{
+    box-shadow: none;
+  }
+
+  &_full{
+    width: 100%;
+  }
+  &_small{
+    font-size: .9rem;
+  }
+  &_disabled{
+    opacity: .8;
+    &:hover{
+      cursor: auto;
+      // opacity: .5;
+    }
+  }
+
+  &_round{
+    width: 1.9rem;
+    height: 1.9rem;
+    padding: 0;
+  }
+
+
+  &_primary{
+    background: $primary;
+    border: none;
+
+    &:hover{
+      background: $primary-hover;
+    }
+  }
+  &_secondary{
+    color: $textSecondary;
+    background: $secondary;
+  }
+  &_nopadding{
+    padding: 0;
+  }
+  &_big{
+    padding: $button-padding-big;
+  }
+}
+
+.link{
+  &_disabled{
+    opacity: .3;
+    pointer-events: none;
+    &:hover{
+      opacity: .8;
+      cursor: auto;
+      // opacity: .5;
+    }
+  }
+}

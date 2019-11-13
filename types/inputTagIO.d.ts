@@ -1,0 +1,3 @@
+interface IInputTagIO {
+    id?: number;
+}

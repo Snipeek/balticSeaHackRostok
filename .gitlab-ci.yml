@@ -1,0 +1,30 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+#=======#
+# Build #
+#=======#
+
+build:
+    stage: build
+    script:
+        - npm install
+        - npm run build
+
+#========#
+# Deploy #  
+#========#
+
+deploy_dev:
+    stage: deploy
+    image: mazuninky/docker-aws:latest
+    script: ./.ci/deploy-dev.sh
+    variables:
+        DOCKER_HOST: tcp://docker:2375
+    services:
+        - docker:19.03.1-dind
+    only:
+        - dev

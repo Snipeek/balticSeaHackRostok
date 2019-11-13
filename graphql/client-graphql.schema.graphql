@@ -1,0 +1,120 @@
+input Credentials {
+    login: String!
+    password: String!
+}
+
+type Mutation {
+    companyRegistration(request: RegisterCompanyInput!): Boolean
+    requestCode(email: String!): Boolean
+    addVideo(url: String!): Boolean
+    signIn(credentials: Credentials!, rememberMe: Boolean): String
+    addPoint(item: PointInput!): Point
+    changePoint(item: PointChangeInput!): Point
+    removePoint(pointId: Int!): Boolean
+    deleteVideo(id: Int!): Boolean
+    startCompany(videoId: Int!): Boolean
+}
+
+type Point {
+    id: Int!
+    comment: String!
+    time: Int!
+    videoId: Int!
+    wave: WaveType!
+    author: User!
+}
+
+type PointAggregation {
+    alpha: [Point!]
+    beta: [Point!]
+    gamma: [Point!]
+    theta: [Point!]
+}
+
+input PointChangeInput {
+    comment: String!
+    time: Int!
+    id: Int!
+    wave: WaveType!
+}
+
+input PointInput {
+    comment: String!
+    time: Int!
+    videoId: Int!
+    wave: WaveType!
+}
+
+type Profile {
+    login: String!
+    balance: Float!
+}
+
+type Query {
+    """
+    Дефолтное значение pageSize - 20
+    Дефолтное значние page - 0
+    """
+    listVideos(pageSize: Int, page: Int): VideosPage
+    findVideo(videoId: Int!): Video
+    profile: Profile
+}
+
+input RegisterCompanyInput {
+    email: String!
+    password: String!
+    code: String!
+    name: String!
+}
+
+type User {
+    firstName: String!
+    lastName: String!
+    email: String!
+}
+
+type Video {
+    id: Int!
+    title: String!
+    videoProvider: String!
+    videoProviderId: String!
+    stats: VideoStats
+    wavesData: WavesStats!
+    points: PointAggregation!
+}
+
+type VideosPage {
+    totalPages: Int!
+    data: [Video]!
+}
+
+type VideoStats {
+    views: Int!
+    maxViews: Int!
+    upvotes: Int!
+    downvotes: Int!
+    index: Float!
+}
+
+type WaveData {
+    data: [Float]!
+    frequency: Int
+}
+
+type WavesStats {
+    alpha: WaveData!
+    beta: WaveData!
+    gamma: WaveData!
+    theta: WaveData!
+    eyeContact: WaveData!
+    attention: WaveData!
+    meditation: WaveData!
+}
+
+enum WaveType {
+    alpha
+    beta
+    gamma
+    theta
+}
+

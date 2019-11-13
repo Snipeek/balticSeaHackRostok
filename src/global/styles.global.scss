@@ -1,0 +1,92 @@
+/* Regular @import url statements work as you'd expect them to -- alternatively
+you can import locally, and they wind up in the resulting bundle */
+
+@import "~bootstrap/scss/_functions";
+@import "~bootstrap/scss/_variables";
+@import "~bootstrap/scss/_mixins";
+@import "~bootstrap/scss/grid";
+// @import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/utilities/flex";
+@import "~bootstrap/scss/utilities/text";
+
+@import '../style/_variables';
+
+@import "fonts/_fonts";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+}
+*::placeholder, *[value]{
+    font-family: 'Inter', 'Myriad Pro', Arial, sans-serif;
+}
+
+html, body, svg, div {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Inter', 'Myriad Pro', Arial, sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  position: relative;
+  min-width: 320px;
+
+  color: $textSecondary;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: bold;
+  color: $text;
+}
+
+#root{
+  overflow: hidden;
+}
+
+.root-row{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.page{
+  width: 65%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 $paddingSmall;
+  overflow-y: auto;
+  max-height: 100vh;
+  @media #{$md} {
+    padding: 0 $paddingVeryVeryBig;
+  }
+}
+
+.h1 {
+  font-size: 48px;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.control-disabled {
+  opacity: .5;
+}

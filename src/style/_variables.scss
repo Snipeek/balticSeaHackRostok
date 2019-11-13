@@ -1,0 +1,109 @@
+$bg: #f7f7f7;
+$color: #3f4c6b;
+
+$text: #333;
+$textSecondary: rgba(0, 0, 0, 0.6);
+
+$textLight: #fff;
+$textLightSecondary: #ddd;
+
+$fontSizeBig: 24px;
+$fontSizeMedium: 18px;
+$fontSizeNormal: 16px;
+$fontSizeSmall: 14px;
+$fontSizeVerySmall:12px;
+
+/* Colors */
+$primary: linear-gradient(270deg, #FFB036 0%, #FF4444 100%);
+$primary-hover: linear-gradient(270deg, #FFB036 0%, #FF4444 80%);
+
+$secondary: #fff;
+
+$input-color: #999;
+$input-placeholder-color: #dbdbdb;
+
+$danger: #FF1A32;
+
+/**/
+
+$colorGray: #8f8e9a;
+$colorDark: #333333;
+
+
+/* Input */
+$input-border-radius: 3px;
+$input-border-color: #E6E6E6;
+$input-border-color-focus: #FFB036;
+$input-border-color-danger: $danger;
+$input-padding: 15px 10px;
+
+/* Button */
+$button-border-radius: 100px;
+$button-padding: 15px 35px;
+$button-padding-big: 20px 70px;
+
+/* Card */
+$card-border-radius: 10px;
+
+/* ------------------------------------------- */
+
+$main: #597bef;
+
+$gray: #dedede;
+
+$text: #333;
+//$textLight: rgba(51, 51, 51, 0.6);
+$textPlaceholder: rgba(51, 51, 51, 0.3);
+
+//padding
+$paddingSmall: 8px;
+$paddingNormal: 16px;
+$paddingMiddle: 24px;
+$paddingBig: 32px;
+$paddingVeryBig: 45px;
+$paddingVeryVeryBig: 70px;
+
+//gutters
+$gutter: 4px;
+$gutterSm: 8px;
+$gutterMd: 12px;
+$gutterLg: 12px;
+$gutterXl: 12px;
+$gutterHd: 12px;
+
+$cardPreviewPaddingMobile: 32px;
+$cardPreviewPaddingLaptop: 48px;
+$cardPreviewPayPaddingBottom: 16px;
+$cardPreviewPayPaddingBottomLaptop: 24px;
+
+$sectionBorder: 1px solid rgba(0,0,0,.08);
+
+// Headings
+
+$h1Desktop: 3em;
+
+$paragraphBig: 1.2em;
+$lineHeightParagraphBig: 1.5;
+
+$h1: 2em;
+$lineHeightH1: 1em;
+
+$h2: 1.5em;
+$lineHeightH2: 1em;
+
+// Точки перелома
+// mobile 320-767
+$sm: '(min-width: 576px)';
+$md: '(min-width: 768px)';
+$lg: '(min-width: 992px)';
+$xl: '(min-width: 1200px)';
+$hd: '(min-width: 1440px)';
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+
+  xl: 1200px,
+  hd: 1440px,
+);

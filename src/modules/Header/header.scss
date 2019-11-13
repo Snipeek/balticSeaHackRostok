@@ -1,0 +1,49 @@
+@import '../../style/_variables';
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: $paddingBig 0;
+  @media #{$md} {
+    padding: $paddingVeryBig 0;
+  }
+
+  &__logo{
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #333;
+    height: 1.2em;
+    text-decoration: none;
+    line-height: 0;
+    img {
+      margin-right: $paddingSmall;
+    }
+  }
+
+  &__account{
+    display: flex;
+    align-items: center;
+    &-text{
+      margin-right: $paddingBig;
+    }
+
+    .septum {
+      height: 1.5em;
+    }
+  }
+  &__lang{
+    //margin-right: 1em;
+    &-link{
+      font-weight: bold;
+      color: $colorDark;
+    }
+  }
+  &__sign-in{
+    //margin: 0 1em;
+    font-weight: bold;
+    color: $colorDark;
+  }
+}

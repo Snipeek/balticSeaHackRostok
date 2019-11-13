@@ -1,0 +1,15 @@
+.comment{
+  &__wrapper{
+    margin: 1em 0;
+  }
+  &__avatar{
+    margin-bottom: .5em;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+
+    .icon-avatar {
+      margin-right: .5em;
+    }
+  }
+}

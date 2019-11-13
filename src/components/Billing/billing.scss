@@ -1,0 +1,21 @@
+.billing{
+  &__wrapper{
+    display: flex;
+    align-items: center;
+    svg {
+      display: block;
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+  &__value{
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-left: .5em;
+  }
+  &__currency{
+    font-size: .7em;
+    opacity: .66;
+    margin-left: .25em;
+  }
+}

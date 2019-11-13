@@ -1,0 +1,33 @@
+@import '../../style/variables';
+
+.sign-up{
+  &__wrapper{
+
+  }
+  &__title{
+    margin-bottom: $paddingBig;
+  }
+  &__bg{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    z-index: -1;
+
+    img {
+      min-width: 80vw;
+      margin: 0;
+      padding: 0;
+    }
+  }
+  &__submit{
+    margin: $paddingNormal 0;
+  }
+  &__text{
+    color: $colorGray;
+    margin: $paddingMiddle 0;
+    text-align: center;
+    font-size: .9em;
+    //max-width: 70%;
+  }
+}

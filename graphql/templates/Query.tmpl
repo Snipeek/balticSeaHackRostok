@@ -1,0 +1,25 @@
+import {Query} from "react-apollo";
+
+import {QueryHookOptions, useQuery} from "@apollo/react-hooks";
+import {DocumentNode} from "graphql";
+
+export interface I<%-className%>QueryData {
+    <%-name%><%-dataType%>;
+}
+<% if(args){ %>
+export interface I<%-className%>QueryVariables {
+<% args.forEach(function (arg) {%>    <%-arg.name%><%-arg.type%>;
+<%}) %>}
+<% } %><%if (description){%>
+/**
+ * <%-description%>
+ */<%}%>
+export class <%-className%>Query extends Query<I<%-className%>QueryData<% if(args){ %>, I<%-className%>QueryVariables<%}%>> {
+}
+
+export const use<%-className%>Query = (query: DocumentNode, options?: QueryHookOptions<I<%-className%>QueryData<% if(args){ %>, I<%-className%>QueryVariables<%}%>>) => (
+    useQuery<I<%-className%>QueryData<% if(args){ %>, I<%-className%>QueryVariables<%}%>>(
+        query,
+        options
+    )
+)

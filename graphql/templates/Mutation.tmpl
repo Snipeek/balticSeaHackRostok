@@ -1,0 +1,25 @@
+import {Mutation} from "react-apollo";
+
+import {MutationHookOptions, useMutation} from "@apollo/react-hooks";
+import {DocumentNode} from "graphql";
+
+export interface I<%-className%>MutationData {
+    <%-name%><%-dataType%>;
+}
+<% if(args){ %>
+export interface I<%-className%>MutationVariables {
+<% args.forEach(function (arg) {%>    <%-arg.name%><%-arg.type%>;
+<%}) %>}
+<% } %><%if (description){%>
+/**
+ * <%-description%>
+ */<%}%>
+export class <%-className%>Mutation extends Mutation<I<%-className%>MutationData<% if(args){ %>, I<%-className%>MutationVariables<%}%>> {
+}
+
+export const use<%-className%>Mutation = (mutation: DocumentNode, options?: MutationHookOptions<I<%-className%>MutationData<% if(args){ %>, I<%-className%>MutationVariables<%}%>>) => (
+    useMutation<I<%-className%>MutationData<% if(args){ %>, I<%-className%>MutationVariables<%}%>>(
+        mutation,
+        options
+    )
+)

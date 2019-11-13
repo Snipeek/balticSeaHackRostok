@@ -1,0 +1,3 @@
+interface IUseCookieApprove {
+    useCookieApproved?: boolean;
+}

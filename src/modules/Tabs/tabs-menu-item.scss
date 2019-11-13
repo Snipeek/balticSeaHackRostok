@@ -1,0 +1,16 @@
+.tabs-menu-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: .5em 1em;
+  border-radius: 1000px;
+  margin: .5em;
+  cursor: pointer;
+  //box-shadow: 0 2px 20px rgba(0,0,0,.05);
+
+  transition: .2s all;
+
+  &_current, &:hover{
+    box-shadow: 0 2px 20px rgba(0,0,0,.1);
+  }
+}

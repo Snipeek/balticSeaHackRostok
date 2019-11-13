@@ -1,0 +1,101 @@
+{
+  "signUp": {
+    "header": {
+      "title": "Sign Up"
+    },
+    "content": {
+      "title": "Sign Up",
+      "terms": "By clicking \"Continue\" I agree to nrboom’s <1>Terms of Service</1> and <3>Privacy Policy</3>."
+    }
+  },
+  "signIn": {
+    "header": {
+      "title": "Sign In"
+    },
+    "content": {
+      "title": "Sign In"
+    }
+  },
+  "lineUp": {
+    "header": {
+      "title": "Line Up"
+    },
+    "content": {
+      "title": "Line Up"
+    }
+  },
+  "common": {
+    "signIn": "Sign In",
+    "signUp": "Sign Up",
+    "continue": "Continue",
+    "export-xlsx": "Export to xlsx",
+    "create-pdf": "Create pdf",
+    "add": "Add",
+    "delete-video": "Delete Video",
+    "start-company": "Start company",
+    "testing-in-process": "Testing in progress"
+  },
+  "message": {
+    "success": {
+      "companyRegistration": "Yup, welcome to us 💁",
+      "requestCode": "You should have received a confirmation code 💁",
+      "addVideo": "The video was successfully added 💁",
+      "deleteVideo": "The video was successfully deleted 💁",
+      "testing-in-process": "Testing in progress..."
+    },
+    "error": {
+
+    }
+  },
+  "input": {
+    "name": {
+      "label": "Name",
+      "placeholder": "Bruno Miller"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "+5 characters"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "bruno@company.com"
+    },
+    "addVideo": {
+      "label": "Add video"
+    },
+    "userType": {
+      "label": "Select user type",
+      "values": {
+        "maker": "Videomaker",
+        "anal": "Analyst"
+      }
+    },
+    "code": {
+      "label": "Your code",
+      "placeholder": "******"
+    }
+  },
+  "waves": {
+    "emotions": {
+      "title": "emotions",
+      "description": ""
+    },
+    "analysis": {
+      "title": "analysis",
+      "description": ""
+    },
+    "engagement": {
+      "title": "engagement",
+      "description": ""
+    },
+    "memorization": {
+      "title": "memorization",
+      "description": ""
+    }
+  },
+  "empty": {
+    "waves": "No waves",
+    "comments": "No comments",
+    "videos": "No videos"
+  }
+}

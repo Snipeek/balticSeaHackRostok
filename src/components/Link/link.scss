@@ -1,0 +1,19 @@
+.link {
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-block;
+  outline: none;
+  border: none;
+  letter-spacing: 0.5px;
+  transition: .2s opacity;
+
+  color: inherit;
+
+  &:hover{
+    opacity: .5;
+  }
+
+  &_nopadding{
+    padding: 0;
+  }
+}

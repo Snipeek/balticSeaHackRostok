@@ -1,0 +1,43 @@
+{
+  "defaultSeverity": "error",
+  "enable": true,
+  "extends": [
+    "tslint:recommended"
+  ],
+  "jsRules": {},
+  "rules": {
+    "no-var-requires": false,
+    "ordered-imports": false,
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "max-line-length": false,
+    "no-console": false,
+    "no-floating-promises": false,
+    "object-literal-sort-keys": false,
+    "no-unused-variable": false,
+    "no-empty": false,
+    "no-empty-interface": false,
+    "no-shadowed-variable": false,
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "graphql": [
+      true,
+      {
+        // Import default settings for your GraphQL client. Supported values:
+        // 'apollo', 'relay', 'lokka'
+        "env": "apollo",
+        "schemaJsonFilepath": "./graphql/graphql.schema.json"
+        // tagName is gql by default
+      }
+    ]
+  },
+  "rulesDirectory": [
+    "./tslint-rules"
+  ]
+}
